@@ -22,7 +22,7 @@ app.get("/fibonacci", (req, res) => {
 
 app.get("/factorial", (req, res) => {
     const { n } = req.query;
-    
+
     if (n === undefined || n.length === 0 || isNaN(n)) {
         res.json({
             "status": "error",
